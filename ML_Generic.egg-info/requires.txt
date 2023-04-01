@@ -1,4 +1,8 @@
-pandas
-numpy
-seaborn
+dill
 matplotlib
+numpy
+pandas
+pickle
+scikit-learn
+seaborn
+sklearn
