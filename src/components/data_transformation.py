@@ -1,8 +1,8 @@
 import sys
-from dataclasses import dataclass
-
+import os
 import numpy as np 
 import pandas as pd
+from dataclasses import dataclass
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
@@ -10,8 +10,6 @@ from sklearn.preprocessing import OneHotEncoder,StandardScaler
 
 from src.exception import CustomException
 from src.logger import logging
-import os
-
 from src.utils import save_object
 
 @dataclass
@@ -117,7 +115,7 @@ class DataTransformation:
 
             return (
                 train_arr,
-                test_arr,
+                train_arr,
                 self.data_transformation_config.preprocessor_obj_file_path,
             )
         except Exception as e:

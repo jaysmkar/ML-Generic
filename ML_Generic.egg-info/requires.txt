@@ -1,8 +1,9 @@
+catboost
 dill
 matplotlib
 numpy
 pandas
-pickle
 scikit-learn
 seaborn
 sklearn
+xgboost
